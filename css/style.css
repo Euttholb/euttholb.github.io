@@ -6,6 +6,10 @@ body{
     margin-top: 100px;
 }
 
+#title{
+    text-shadow: 3px 3px 5px maroon, -3px -3px 5px teal;
+}
+
 h1{
     color:white;
     font-size: 3rem;
