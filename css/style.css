@@ -6,8 +6,8 @@ body{
     margin-top: 100px;
 }
 
-#title1{
-    text-shadow: 3px 3px 5px maroon, -3px -3px 5px teal;
+#titlekash{
+    text-shadow: 3px 3px 5px #800000, -3px -3px 5px #008080;
 }
 
 h1{
