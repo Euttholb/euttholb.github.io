@@ -7,7 +7,8 @@ body{
 }
 
 #titlekash{
-    text-shadow: 3px 3px 5px #800000, -3px -3px 5px #008080;
+    color: yellow;
+    background: red;
 }
 
 h1{
