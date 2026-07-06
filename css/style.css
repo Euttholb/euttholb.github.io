@@ -1,10 +1,15 @@
 body{
+    background-color: #333333
+}
+
+#homepage{
     background-color: #333333;
     font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
-    text-align: right;
+    text-align: center;
     margin-top: 100px;
 }
+
 
 #titlekash{
     text-shadow: 3 3 0 red;
@@ -13,6 +18,10 @@ body{
 h1{
     color:white;
     font-size: 3rem;
+}
+
+h2{
+    color:white;
 }
 
 p{
@@ -24,7 +33,8 @@ a{
 }
 
 #dogimg{
+    
     float: left;
-    margin-left: 150;
+    margin-right: 50px;
     
 }
