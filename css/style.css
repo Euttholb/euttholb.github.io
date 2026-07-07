@@ -32,9 +32,15 @@ a{
     color:aqua;
 }
 
-#dogimg{
-    
+#dogImg{
+    padding-left: 15em;
     float: left;
     margin-right: 50px;
     
+}
+
+#scoundrelIcon{
+    padding-left: 15em;
+    float: left;
+    margin-right: 50px;
 }
