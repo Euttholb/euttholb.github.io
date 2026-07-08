@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../assetts/KPIcon.png">
     <link rel="stylesheet" href="../css/style.css">
-    <title>ProjectPage</title>
+    <title>Kash Projects | Project Page</title>
 </head>
 
-<body>
+<body id="projectPage">
     <header>
         <h1 style="text-align: center;">Projects</h1>
     </header>
     <hr>
     <br>
-    <nav style ="text-align: center;">
+    <nav id="navBar">
         <a href="/euttholb.github.io/index.html"
            title="Back to homepage">
         Home
         </a>
         <a href="devblog/index.html"
             title="my rambles about projects">
-        Devblog
+        Blog
         </a>
         <a href="https://github.com/Euttholb"
             title="Link to my Github">
@@ -30,19 +31,38 @@
 
     <main>
         <article id="puppyPiPost">
-            <span>
-                <img src="/euttholb.github.io/assetts/puppypi.jpeg" height="150px" id="dogImg">
-            </span>
-            <h2>PuppyPi</h2>
-            <p> This is the dog!</p>
+            <img src="../assetts/puppypi.jpeg" height="150px" id="dogImg">
+            <div>
+                <h2>PuppyPi</h2>
+                <p>A quadruped robot that utilizes a Raspberry Pi, Python, and ROS all connected to a Steamdeck.</p>
+                <p>This was in collaboration with three Friends in our Senior Design class.</p>
+                <a href="puppyPiArticle.html">
+                    PuppyPi Devlog
+                </a>
+            </div>
         </article>
 
         <article id="scoundrelPost">
-            <div> 
-                <img src="/euttholb.github.io/assetts/scoundrelIcon.png" height="150px" id="scoundrelIcon">
+            <img src="../assetts/scoundrelIcon.png" height="150px" id="scoundrelIcon">
+            <div>
+                <h2>Scoundrel WebGL</h2>
+                <p> A card game developed in WebGL.</p>
+                <a href="scoundrelArticle.html">
+                    Scoundrel Devlog
+                </a>
             </div>
-            <h2>Scoundrel WebGL</h2>
-            <p> This is my first game!</p>
+        </article>
+
+        <article id="kashProjectsPost">
+            <img src="../assetts/KPIcon.png" height="150px" id="kashIcon">
+            <div>
+                <h2>Kash Projects</h2>
+                <p>A full stack project that double as a portfolio</p>
+                <p>placeholder.</p>
+                <a href="kashProjects.html">
+                    Kash Projects Devlog
+                </a>
+            </div>
         </article>
         
     </main>

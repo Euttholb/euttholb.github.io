@@ -1,46 +1,71 @@
 body{
-    background-color: #333333
+    background-color: #1B211A;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center; 
 }
 
 #homepage{
-    background-color: #333333;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1B211A;
+    font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#projectPage{
+    background-color: #1B211A;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
 #titlekash{
-    text-shadow: 3px 3px 0 red;
+    text-shadow: 3px 3px 0 #628141;
+    color: #EBD5AB
+}
+
+#navBar{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 h1{
-    color:white;
+    color: #e9d8ba;
     font-size: 3rem;
 }
 
 h2{
-    color:white;
+    color:#ffffff;
 }
 
 p{
-    color: white;
+    color: #f7f0e3;
+    line-height: 1.5;
 }
 
 a{
-    color:aqua;
+    color:#00cece;
 }
 
-#dogImg{
-    padding-left: 15em;
-    float: left;
-    margin-right: 50px;
-    
+article{
+    display: flexbox;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
+
 
 #scoundrelIcon{
-    padding-left: 15em;
-    float: left;
-    margin-right: 50px;
+    image-rendering: pixelated;
 }
