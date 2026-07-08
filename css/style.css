@@ -5,7 +5,7 @@ body{
     text-align: center; 
 }
 
-#homepage{
+#homePage{
     background-color: #1B211A;
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
@@ -37,6 +37,9 @@ body{
     justify-content: center;
 }
 
+#writingPost{
+    text-align: left;
+}
 h1{
     color: #e9d8ba;
     font-size: 3rem;
@@ -69,3 +72,4 @@ article{
 #scoundrelIcon{
     image-rendering: pixelated;
 }
+
