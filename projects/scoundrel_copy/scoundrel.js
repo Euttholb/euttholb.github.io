@@ -296,9 +296,10 @@ function loadTexture(url) {
 }
 
 function getCardTexture(card) {
-    const suite = card.suite.toLowerCase(); 
+    //const suite = card.suite.toLowerCase(); 
+    const suite = card.suite;
     const value = card.value;               
-    const url = `assets/${suite}_${value}.png`;
+    const url = `./assets/${suite}_${value}.png`;
     return loadTexture(url);
 }
 
@@ -326,7 +327,7 @@ function renderScene() {
     //draw pile
     const drawX = -0.75;
     const drawY = 0.0;
-    const backTex = loadTexture("assets/card_back.png");
+    const backTex = loadTexture("./assets/card_back.png");
     drawCardTexture(drawX, drawY, cardW, cardH, backTex);
 
     slots.push({
@@ -370,7 +371,7 @@ function renderScene() {
         weaponTex = getCardTexture(player.weapon.card);
     } else {
         
-        weaponTex = "";
+        weaponTex = loadTexture("./assets/Card_Back.png");
     }
 
     drawCardTexture(weaponX, weaponY, cardW, cardH, weaponTex);
