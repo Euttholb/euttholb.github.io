@@ -327,7 +327,7 @@ function renderScene() {
     //draw pile
     const drawX = -0.75;
     const drawY = 0.0;
-    const backTex = loadTexture("./assets/card_back.png");
+    const backTex = loadTexture("./assets/Card_Back.png");
     drawCardTexture(drawX, drawY, cardW, cardH, backTex);
 
     slots.push({
