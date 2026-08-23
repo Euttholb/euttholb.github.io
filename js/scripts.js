@@ -1,10 +1,4 @@
-
-/*
-------------------------------------
-PREPARE A PATH
-------------------------------------
-*/
-
+//prepares paths to draw
 function preparePath(path) {
 
   const length =
@@ -22,12 +16,7 @@ function preparePath(path) {
 }
 
 
-/*
-------------------------------------
-DRAW ONE PATH
-------------------------------------
-*/
-
+//draw function
 function drawPath(
   path,
   duration = 150
@@ -61,12 +50,7 @@ function drawPath(
 }
 
 
-/*
-------------------------------------
-DRAW MULTIPLE PATHS
-AT THE SAME TIME
-------------------------------------
-*/
+//takes branching paths
 
 function drawGroup(
   ids,
@@ -98,90 +82,33 @@ function drawGroup(
 
 }
 
-
-/*
-------------------------------------
-YOSEMITE SEQUENCE
-------------------------------------
-
-The SVG was split where lines meet,
-which gives us natural places to
-branch the animation.
-
-This can be tuned further once you
-decide exactly how fast every ridge
-should grow.
-*/
+//drawing yosemite
 
 async function animateYosemite() {
 
-  /*
-   ================================
-   LEFT SIDE
-   ================================
-  */
-
   await drawGroup(
     [
+      //top of el cap -> to bottom
       "line-01",
-      "line-03"
+      "line-02",
+      "line-03",
+      "line-04",
+      "line-05",
+      "line-09",
+
+
+      //start of havasu falls range
+      "line-25",
+      "line-26",
+      "line-27",
+      "line-28",
+      "line-23",
+      "line-24",
+      "line-21",
+
     ],
-    1700
+    1400
   );
-
-
-  /*
-    line-03 reaches the large
-    left cliff intersection.
-
-    Two lines now continue from
-    that area.
-  */
-
-  await Promise.all([
-
-    drawGroup(
-      [
-        "line-04",
-        "line-05"
-      ],
-      1800
-    ),
-
-    drawGroup(
-      [
-        "line-02"
-      ],
-      1800
-    )
-
-  ]);
-
-
-  /*
-   ================================
-   CENTRAL VALLEY
-   ================================
-  */
-
-  await Promise.all([
-
-    drawGroup(
-      [
-        "line-06"
-      ],
-      1000
-    ),
-
-    drawGroup(
-      [
-        "line-07"
-      ],
-      1200
-    )
-
-  ]);
-
 
   /*
     The central mountain region
@@ -193,154 +120,45 @@ async function animateYosemite() {
     [
       "line-11",
       "line-13",
-      "line-14"
+      "line-14",
+      "line-08",
+      "line-16",
+      "line-07",
+      "line-12",
+      "line-15"
     ],
-    900
+    1200
   );
 
+  //the middle midground
 
   await Promise.all([
 
     drawGroup(
       [
-        "line-12",
-        "line-15"
-      ],
-      700
-    ),
 
-    drawGroup(
-      [
-        "line-08"
-      ],
-      1500
-    )
-
-  ]);
-
-
-  /*
-   ================================
-   LOWER CENTER
-   ================================
-  */
-
-  await Promise.all([
-
-    drawGroup(
-      [
-        "line-09"
-      ],
-      1700
-    ),
-
-    drawGroup(
-      [
-        "line-10"
-      ],
-      1100
-    )
-
-  ]);
-
-
-  /*
-   ================================
-   RIGHT SIDE
-   ================================
-  */
-
-  await Promise.all([
-
-    drawGroup(
-      [
-        "line-16"
-      ],
-      2200
-    ),
-
-    drawGroup(
-      [
+        
+        "line-19",
+        "line-20",
+        "line-29",
+        "line-22",
+        "line-11",
+        "line-13",
+        "line-14",
+        "line-10",
         "line-17",
         "line-18"
       ],
-      1200
-    )
-
-  ]);
-
-
-  await drawGroup(
-    [
-      "line-19",
-      "line-20"
-    ],
-    1100
-  );
-
-
-  /*
-    Remaining right-side paths.
-
-    Since the vectorizer created
-    29 paths, these form the final
-    right mountain / valley
-    silhouettes.
-  */
-
-  await Promise.all([
-
-    drawGroup(
-      [
-        "line-21"
-      ],
-      2700
+      1000
     ),
-
-    drawGroup(
-      [
-        "line-22",
-        "line-23",
-        "line-24"
-      ],
-      1800
-    )
-
   ]);
-
-
-  await Promise.all([
-
-    drawGroup(
-      [
-        "line-25",
-        "line-26"
-      ],
-      1400
-    ),
-
-    drawGroup(
-      [
-        "line-27",
-        "line-28",
-        "line-29"
-      ],
-      1900
-    )
-
-  ]);
-
 
   revealInterface();
-
 }
 
 
-/*
-------------------------------------
-TEXT REVEAL
-------------------------------------
-*/
+
+//revealing messages
 
 function revealInterface() {
 
@@ -386,11 +204,7 @@ function revealInterface() {
 }
 
 
-/*
-------------------------------------
-START
-------------------------------------
-*/
+//starting functions
 
 function init() {
 
@@ -401,10 +215,7 @@ function init() {
 
   paths.forEach(preparePath);
 
-  /*
-    Force the browser to render the
-    hidden state before animation starts.
-  */
+
   document.body.offsetHeight;
 
   setTimeout(
