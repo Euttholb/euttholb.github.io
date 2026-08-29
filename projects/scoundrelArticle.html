@@ -28,16 +28,15 @@
     <main>
         <div id="writingPost">
             <article>
-                <h2>~ 12/4/2025 - 12/9/2025</h2>
+                <h2>12/9/2025</h2>
                 <p>Scoundrel was the second major project I've made while in my Undergrad. It served as a final project for my
                    Computer Graphics course. This class had a bunch of ups and downs, mainly because our professor dove us headfirst into WebGL and Javascript
                    without anyone else having any kind of experience with the language or the WebGL library. Combined with the weird ways browsers try to automatically 
                    fix any errors in code, it's really easy to miss a simple bug. WebGL has very particular parameters too. In the end, it was a fun project to try, and I have plans
                    to expand upon it now that the game can be played on Kash Projects!</p>
                 
-                <p>I ran into the game while looking for different card games to play when I was bored, Scoundrel itself was not even my first choice for the computer graphics project;
-                   the moment I started playing, the ideas started flowing easily about the development. That was when I knew I had to at least try. To those who have tried making a game before -
-                   especially from scratch - would definitely understand how tedious and difficult even a simple game like this one would be difficult to create <i>especially</i> in 5 days as a full time student
+                <p>I ran into the game while looking for different card games to play when I was bored, Scoundrel wasn't even my first choice for the computer graphics project - but the moment I started playing it, ideas for the development started flowing easily. 
+                   That was when I knew I had to at least try. Anyone who has tried making a game before, will understand how tedious even a simple game like this can be to create, especially in 5 days as a full-time student and full time-time employee. <i>especially</i> in 5 days as a full time student
                    and at a full time job. </p>
                 <br>
                 <p>Before I talk about the development process, 
@@ -46,7 +45,7 @@
                 <br>
                 <h2>Where to Begin?</h2>
                 <p>
-                    Anytime you plan for a game (or any project for that matter) write so many features and elements that you think are necessary, like an interactive menu screen, leaderboard, sounds, 
+                    Any time you plan for a game (or any project for that matter) you write so many features and elements that you think are necessary, like an interactive menu screen, leaderboard, sounds, 
                     textures, animations, the list can be endless. However that list can get overwhelming so fast and what would be a small project quickly cascades into something you don't even know where to
                     begin. I've mentioned this before, but seriously, sometimes you just have to take a step back and just start <b>simple</b>.  
                 </p>
@@ -54,7 +53,7 @@
                 
             <article>
                 <h2>Starting Out</h2>
-                <p> Overwhelmed with possibility, I had to remind myself multiple times to be simple. The game does not need to be the most polished, nice-looking revolutionary thing out there. I just needed
+                <p> Overwhelmed with possibility, I had to remind myself multiple times to keep things simple. The game does not need to be the most polished, nice-looking revolutionary thing out there. I just needed
                     something rugged to showcase the mechanics first and iron out any bugs from the code. When writing out the fundamentals of the game, it can be listed out as:
                 </p>
                 <ul>
@@ -65,11 +64,11 @@
                     <li>Basic interactivity (clickable boxes, digestible UI)</li>    
                 </ul>
                 <p>Those three points alone give me a great starting point. I did not need a start screen or game over screen, and basic logical bugs like your health going beyond zero
-                    can be overseen at this stage cause all we need is for our core functions to work sufficiently before we add complexity. 
+                    can be overlooked at this stage because all we need is for our core functions to work sufficiently before we add complexity. 
                 </p>
                 <img src="../assetts/scoundrelClip1.gif" alt="The first rugged iteration of Scoundrel" 
                     class="sampleImage">
-                <p>After about two days of solid work, you can see the format was incredibly rugged, no colors, no textures, just text to tell me what "card" I am looking at
+                <p>After about two days of solid work, the format was incredibly rugged, no colors, no textures, just text to tell me what "card" I am looking at
                    and play the game to test the mechanics. It was really fun to see even this much on the screen starting out, as the work I was putting out
                    was no longer boilerplate copy/pasted from my professor to work on homework, I was officially on my own in an endless sandbox.
                 </p>
@@ -78,7 +77,7 @@
             <article>
                 <h2>A Little More Each Time</h2>
                 <p>Day 3 primarily consisted of rapid prototyping. Constantly adding little things on top of the other, slowly but surely, I was getting somewhere. By adding colors to the blocks it was easier 
-                    for a user to determine if a "card" was used for healing/support, or if it was an enemy type. At this point I was also working on the game board itself and figuring some type of layout that would be
+                    for a user to determine if a "card" was used for healing/support, or if it was an enemy type. At this point I was also working on the game board itself and figuring out some type of layout that would be
                     easy for the user to see their health and weapon card, the remaining cards in the dungeon and also the board table itself. I was trying to frame the table, so the user thinks the cards are laying on a board rather than
                     just floating. 
                 </p>
@@ -88,7 +87,7 @@
 
             <article>
                 <h2>Card Textures and Polishing</h2>
-                <p>Day 4 was where the project really came together. I thoroughly enjoyed attatching the textures to the clickboxes in WebGL. Adding the feature was frustrating at first, because trying to understand how WebGL 
+                <p>Day 4 was where the project really came together. I thoroughly enjoyed attaching the textures to the clickboxes in WebGL. Adding the feature was frustrating at first, because trying to understand how WebGL 
                    takes the coordinates of an image and splices them onto the vertices is really hard to grasp in my head. I thought it would be so cool to create my own custom textures, but for the sake of getting
                    the project done on time, I had to use some free open source textures elsewhere as placeholder (credit goes towards <a href="https://nikoichu.itch.io/pixel-cards-free">Nikoichu</a> for this one!). When I revisit this project
                    (soon!) I am definitely going to add my own textures, I just think that will be so cool to do.
@@ -112,13 +111,13 @@
             </article> 
             <article>
                 <h2>Final Thoughts and Going Forward</h2>
-                <p>When presenting the project to my class, I was nervous how it would be recieved at first because the rules for scoundrel can be kind of weird to understand at first, but after a few runs it's easy to catch on. I didn't want to throw anyone off from the game logic
-                    to influence how polished my game was running. Instead, everyone was super supportive and caught on rather quickly! All my classmates wanted to try to beat it too after I tacked on how difficult it is to actually win (it really is kind of hard!). At that point on
-                    I kept theorizing how I could expand on this project further to support playing it online instead of relying on those curious to play to know how to copy a GitHub repository and run LiveServer to play. I quickly connected the dots with the previous idea to have my own 
+                <p>When presenting the project to my class, I was nervous about how it would be received at first because the rules for scoundrel can be kind of weird to understand at first, but after a few runs it's easy to catch on. I didn't want the game's slightly unusual rules
+                    to overshadow how polished the game itself was. Instead, everyone was super supportive and caught on rather quickly! All my classmates wanted to try to beat it too after I mentioned how difficult it is to actually win (it really is kind of hard!). From that point on,
+                    I kept theorizing how I could expand on this project further to support playing it online, instead of relying on curious players knowing how to copy a GitHub repository and run LiveServer to play. I quickly connected the dots with the previous idea to have my own 
                     website. Fast forward to now, it's possible! You can play my WebGL version of Scoundrel <a href="scoundrel_copy/scoundrel.html">here</a>! 
                 </p>
-                <p>Now that Scoundrel is on Kash Projects, I am working on a separate backend of this website to utilize an API that will support a leaderboard and account functionality to Scoundrel. Which counts as it's own project.
-                   This combines many technologies and programming principles utilized in businesses, so I am absolutely excited to bring it to life and post about it the future.
+                <p>Now that Scoundrel is on Kash Projects, I am working on a separate backend of this website to utilize an API that will support a leaderboard and account functionality to Scoundrel. Which counts as its own project.
+                   This combines many technologies and programming principles utilized in businesses, so I am absolutely excited to bring it to life and post about it in the future.
                 </p>
                 <br>
                 <p> For now, you can find more projects <a href="../projects/index.html">here</a>! Thanks for reading!</p>
