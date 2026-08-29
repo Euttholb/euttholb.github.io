@@ -7,7 +7,7 @@ body{
 
 
 #homePage{
-    background-color: #000000;
+    background-color: #504B38;
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
     text-align: center;
@@ -42,9 +42,9 @@ body{
 }
 
 #projectPage{
-    background-color: #000000;
+    background-color: #504B38;
     font-family: 'Times New Roman', Times, serif;
-    color: #ffffff;
+    color: #F7F1DE;
     text-align: center;
     margin-top: 50px;
     margin-left: 10%;
@@ -52,7 +52,7 @@ body{
 }
 
 #projectPage a{
-    color: white;
+    color: #F7F1DE;
   text-decoration: underline;
 
   padding: 0.1em 0.2em;
@@ -85,16 +85,16 @@ body{
     text-align: left;
 }
 h1{
-    color: #ffffff;
+    color: #F7F1DE;
     font-size: 3rem;
 }
 
 h2{
-    color:#ffffff;
+    color:#F7F1DE;
 }
 
 p{
-    color: #f7f0e3;
+    color: #F7F1DE;
     line-height: 1.5;
 }
 

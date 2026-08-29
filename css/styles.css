@@ -1,6 +1,6 @@
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
+  --background: #504B38;
+  --foreground: #B9B28A;
 
   --line-width: 2px;
 
@@ -8,10 +8,6 @@
     clamp(1.5rem, 4vw, 5rem);
 }
 
-
-/* ------------------------------
-   RESET
--------------------------------- */
 
 * {
   box-sizing: border-box;
@@ -28,7 +24,7 @@ body {
   min-height: 100vh;
 
   background: var(--background);
-  color: var(--foreground);
+  color: #F7F1DE;
 
   font-family:
     "Helvetica Neue",
@@ -37,10 +33,6 @@ body {
     sans-serif;
 }
 
-
-/* ------------------------------
-   HERO
--------------------------------- */
 
 .hero {
   position: relative;
@@ -53,10 +45,6 @@ body {
   background: var(--background);
 }
 
-
-/* ------------------------------
-   YOSEMITE DRAWING
--------------------------------- */
 
 .drawing-container {
   position: absolute;
@@ -83,11 +71,6 @@ body {
 }
 
 
-/*
-  Override the styling stored inside
-  the generated SVG.
-*/
-
 .drawing-container .background {
   fill: var(--background);
 }
@@ -106,9 +89,6 @@ body {
 }
 
 
-/* ------------------------------
-   PAGE TEXT
--------------------------------- */
 
 .hero-content {
   position: relative;
@@ -196,10 +176,6 @@ h1 span {
 }
 
 
-/* ------------------------------
-   SCROLL INDICATOR
--------------------------------- */
-
 .scroll-indicator {
   position: absolute;
 
@@ -250,10 +226,6 @@ h1 span {
 }
 
 
-/* ------------------------------
-   ANIMATIONS
--------------------------------- */
-
 .text-visible {
   animation:
     revealText
@@ -298,9 +270,6 @@ h1 span {
 }
 
 
-/* ------------------------------
-   MOBILE
--------------------------------- */
 
 @media (max-width: 700px) {
 
@@ -315,10 +284,6 @@ h1 span {
 
 }
 
-
-/* ------------------------------
-   ACCESSIBILITY
--------------------------------- */
 
 @media (
   prefers-reduced-motion: reduce
