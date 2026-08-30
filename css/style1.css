@@ -8,30 +8,14 @@ body{
 
 #homePage{
     background-color: #504B38;
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: whitesmoke;
     text-align: center;
     margin-top: 50px;
     margin-left: 25%;
     margin-right: 25%;
     padding: 0 1 rem;
-}
-
-#homePage a{
-    color: white;
-  text-decoration: underline;
-
-  padding: 0.1em 0.2em;
-  border-radius: 0px;
-
-  transition:
-    background 0.25s ease,
-    color 0.25s ease;
-}
-
-#homePage a:hover {
-  background: rgb(255, 255, 255);
-  color:#000000
 }
 
 @media(max-width: 700px){
@@ -43,32 +27,14 @@ body{
 
 #projectPage{
     background-color: #504B38;
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #F7F1DE;
     text-align: center;
     margin-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
 }
-
-#projectPage a{
-    color: #F7F1DE;
-  text-decoration: underline;
-
-  padding: 0.1em 0.2em;
-  border-radius: 0px;
-
-  transition:
-    background 0.25s ease,
-    color 0.25s ease;
-}
-
-#projectPage a:hover {
-  background: rgb(255, 255, 255);
-  color:#000000
-}
-
-
 
 #titlekash{
     text-shadow: 3px 3px 0 #628141;
@@ -84,6 +50,10 @@ body{
 #writingPost{
     text-align: left;
 }
+hr{
+    color:#622B14;
+}
+
 h1{
     color: #F7F1DE;
     font-size: 3rem;
@@ -93,13 +63,34 @@ h2{
     color:#F7F1DE;
 }
 
+h3{
+    color:#F7F1DE;
+}
+
 p{
     color: #F7F1DE;
     line-height: 1.5;
 }
 
 a{
-    color:#00cece;
+    color: #F7F1DE;
+  text-decoration: underline;
+
+  padding: 0.4em 0.2em;
+  border-radius: 3px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+a:hover {
+  background: #622B14;
+  color:#CCD67F
+}
+
+ul{
+    color:#F7F1DE;
 }
 
 article{
