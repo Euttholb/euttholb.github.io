@@ -89,6 +89,23 @@ a:hover {
   color:#CCD67F
 }
 
+#playScoundrel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color:#F7F1DE;
+    text-decoration: none;
+    padding: 0.60em 0.40em;
+    border-radius: 9px;
+
+}
+#playScoundrel:hover{
+    background: #ad0000;
+    color:#fffffe
+}
+
+
 ul{
     color:#F7F1DE;
 }
